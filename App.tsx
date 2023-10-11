@@ -1,12 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
-import Contador from '../contador/components/contado'
+import Contador from './components/counter/index'
+import Relogio from './components/timer';
+
 
 export default function App() {
   return (
+  <>
     <View style={styles.container}>
+      <Relogio></Relogio>
       <Contador></Contador>
     </View>
+ </>
   );
 }
 
